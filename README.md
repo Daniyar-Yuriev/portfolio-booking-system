@@ -1,36 +1,56 @@
-# portfolio-booking-system
-Simple booking system built with WordPress and Spring Boot.
+Booking System (WordPress + Spring Boot)
+📌 Overview
 
-**Booking System (WordPress + Spring Boot)**
-**Overview**
-    This project is a simple booking system built with WordPress and Spring Boot.
-    The frontend is implemented using WordPress with custom HTML and JavaScript,
-    and the backend provides RESTful APIs using Spring Boot.
-**Features**
-    Create booking
-    View booking list
-    Delete booking
-    REST API integration with WordPress
-    Docker-based deployment
-**Architecture**
-    WordPress → Spring Boot API → MySQL
-    　　　　　　↓
-    　　　　　Nginx (Reverse Proxy)
-**Tech Stack**
-    Java 17
-    Spring Boot
-    MySQL
-    WordPress
-    Docker
-    Nginx
-**How to Run**
-    docker-compose up -d --build
-**API Endpoints**
-    POST /api/bookings
-    GET /api/bookings
-    DELETE /api/bookings/{id}
-**Notes**
-    This project was created to practice full-stack development and deployment.
-    I focused on building a simple and stable system structure.
-**Author**
-    Daniyar Yuriev
+        This project is a full-stack booking system built with:
+        
+        Frontend: WordPress (Custom HTML + JavaScript)
+        Backend: Spring Boot (REST API)
+        Database: MySQL
+        Deployment: AWS EC2 + Nginx + Docker
+        
+        Users can create bookings, and admins can manage them through a simple UI.
+
+🚀 Features
+        Create booking (POST API)
+        View booking list (GET API)
+        Delete booking (DELETE API)
+        JWT Authentication for admin actions
+        WordPress integration via REST API
+        Responsive UI with JavaScript
+        Docker-based deployment
+🧱 Architecture
+
+        User → WordPress → Spring Boot API → MySQL
+        ↓
+        Nginx (Reverse Proxy)
+
+🛠️ Tech Stack
+        Java 17
+        Spring Boot
+        MySQL
+        WordPress
+        Docker
+        Nginx
+        AWS EC2
+⚙️ How to Run (Docker)
+        docker-compose up -d --build
+🔐 Authentication
+        Login API: /api/auth/login
+        JWT token required for DELETE operations
+🌐 API Endpoints
+        Method	Endpoint	Description
+        POST	/api/bookings	Create booking
+        GET	/api/bookings	Get all bookings
+        DELETE	/api/bookings/{id}	Delete booking
+📸 Screenshots
+
+
+
+💡 Future Improvements
+        Booking update feature
+        Admin dashboard UI improvements
+        Role-based authentication
+        Email notifications
+👨‍💻 Author
+
+        Daniyar Yuriev
